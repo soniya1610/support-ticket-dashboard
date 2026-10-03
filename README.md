@@ -6,6 +6,17 @@ Full-stack app for a small support team: create tickets, track their status, and
 * **Frontend:** React 18 + Vite, React Router, plain CSS, `fetch`
 * No authentication / Spring Security (out of scope)
 
+
+## Live demo
+* Frontend: https://support-ticket-dashboard-nine.vercel.app
+
+* Backend API: https://support-ticket-dashboard-production.up.railway.app/api/tickets
+
+(The backend may take a few seconds to respond on the first request.)
+
+
+## Folder Structure 
+
 ```
 support-ticket-dashboard/
 ├── README.md
