@@ -230,6 +230,17 @@ Error codes: `VALIDATION_ERROR` (400), `MALFORMED_REQUEST` (400), `NOT_FOUND` (4
 * The summary endpoint ignores any query parameters sent to it.
 * Titles/descriptions are trimmed before saving.
 
+## Screenshots
+
+| Ticket list | Create ticket (validation) |
+|---|---|
+| ![List](docs/screenshots/list.png) | ![Create](docs/screenshots/create.png) |
+
+| Ticket detail | Mobile view |
+|---|---|
+| ![Detail](docs/screenshots/detail.png) | ![Mobile](docs/screenshots/mobile.png) |
+
+
 ## Known limitations
 
 * No authentication, users, assignees, comments or ticket editing beyond status/priority (as specified).
@@ -242,8 +253,8 @@ Error codes: `VALIDATION_ERROR` (400), `MALFORMED_REQUEST` (400), `NOT_FOUND` (4
 
 * **Frontend:** `npm install` + `npm run build` succeed; the validation rules were unit-checked with Node (valid input, empty fields, 120/121-character titles, bad emails).
 * **Database:** `V1` and `V2` were executed against a real MariaDB 10.11 (MySQL-compatible) server: schema, 4 indexes, 27 seed rows with all statuses/priorities, and the `LIKE ... ESCAPE '!'` syntax used by the search all work.
-* **Backend Java:** all main and test sources were compiled with `javac` 21 for syntax and project-internal consistency. The environment that produced this project could not download Maven dependencies, so **`mvn test` and the Spring context start-up were not executed there.** Please run `cd backend && mvn test` once on your machine; if anything fails, the failure message should point to a one-line fix.
-
+* **Backend:** `mvn test` passes on my machine (all tests green, `BUILD SUCCESS`), and the
+  application starts against MySQL with the Flyway migrations applied automatically.
 ## Time spent and AI usage
 
 * **Time spent:** approximately 6 hours in total:
