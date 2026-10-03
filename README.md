@@ -246,5 +246,15 @@ Error codes: `VALIDATION_ERROR` (400), `MALFORMED_REQUEST` (400), `NOT_FOUND` (4
 
 ## Time spent and AI usage
 
-* **Time spent:** the AI generated the entire code base in a single working session; the human review/run time is not tracked by the AI. Record your own time spent reviewing and running it here.
-* **How AI tools were used:** an AI assistant (Claude) produced the design, all source code, migrations, tests and this document from the written specification. It also compiled the Java sources for syntax, built the frontend, and ran the SQL migrations on MariaDB to check them. A human should still review the code, run `mvn test`, and click through the manual checklist above.
+* **Time spent:** approximately 6 hours in total:
+  * 1.5 h: reading the assignment, writing the prompt, and generating and reviewing the backend and tests
+  * 1 h: running and debugging the local setup (Maven/JDK/MySQL)
+  * 2 h: frontend testing and UI polish (theme, full-width layout, mobile responsiveness, custom cursor)
+  * 1.5 h: manual testing, README, screenshots and pushing to GitHub
+***How I used AI tools:** I used Claude to generate the initial code base (Spring Boot
+  API, Flyway migrations, tests and the React frontend) from a prompt based on
+  the assignment. I chose Spring Boot, JPA and MySQL because they are my main tech stack.
+  I focused my review on the backend (controller, service, specifications, validation,
+  error handling and the database schema), ran and tested the whole project locally,
+  fixed the environment issues, and customized the UI (theme, full-width layout,
+  responsiveness, custom cursor).
