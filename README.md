@@ -10,7 +10,7 @@ Full-stack app for a small support team: create tickets, track their status, and
 ## Live demo
 * Frontend: https://support-ticket-dashboard-nine.vercel.app
 
-* Backend API: https://support-ticket-dashboard-production.up.railway.app/api/tickets
+* Backend API: https://support-ticket-dashboard-production.up.railway.app/api/tickets/summary
 
 (The backend may take a few seconds to respond on the first request.)
 
