@@ -17,7 +17,7 @@ public final class TicketSpecifications {
 
     private TicketSpecifications() {
     }
-
+    
     /**
      * Combines optional free-text search (title OR customer email, case-insensitive, partial match)
      * with optional status and priority filters. Absent criteria are simply not applied.
